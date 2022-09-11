@@ -33,8 +33,8 @@ int main()
     double area = pi * radiousSquared;
     cout << area << " is the area of your circle" << endl;
 
-    int minValue{ 1 };
-    int maxValue{ 6 };
+    const int minValue{ 1 };
+    const int maxValue{ 6 };
     srand(time(0));
     int diceNumber{ (rand() % (maxValue - minValue)) + 1 };
     cout << "You rolled the dice and got: " << diceNumber;
